@@ -1,0 +1,46 @@
+Predicting House Prices in Boston using Per Capita Crime Rate
+========================================================
+author: Yash Deshpande
+date: June 2, 2018
+autosize: true
+
+Introduction
+========================================================
+
+In this application, we use the Boston Housing dataset #2 from the _mlbench_ package. This dataset contains Boston housing data from the 1970 census, and includes information such as per capita crime rate, proportion of resideltial land zoned, etc.
+
+We will use the per capita crime rate provided in the dataset to predict the house price in USD.
+
+
+Dataset information
+========================================================
+Package name: _mlbench_ 
+
+Dataset name: _BostonHousing2_
+
+A brief summary of the data is given below.
+
+```{r, echo = TRUE}
+library(mlbench)
+data("BostonHousing2")
+summary(BostonHousing2)
+```
+
+Prediction methodology
+========================================================
+
+
+We use simple linear models, which take the per capita crime rate as input from a slider, and use it to predict the house price in the area.
+
+Model 1 draws a relation between the per capita crime rate and the house price.
+
+Model 2 draws a relation between the per capita crime rate added to a constant value, and the house price.
+
+Application link and additional details
+=======================================================
+
+To use the shiny application, please go to the following link. The ui.R and server.R files used to create the application are in the github repo that is also linked below.
+
+Application link: https://yashd94.shinyapps.io/Developing_Data_Products_Week4/
+
+Github repo: https://github.com/yashd94/DDP-Week-4-Assignments
